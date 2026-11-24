@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-page {
+  font-family: Arial, sans-serif;
+  color: #45382f;
+  background: #fffaf3;
+  min-height: 100vh;
+}
+
+/* Navigation */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 6%;
+  background: #fffaf3;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 27px;
+  font-weight: bold;
+  color: #76533b;
+}
+
+.nav-links {
+  display: flex;
+  gap: 23px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #51443b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #a8794f;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.login-btn,
+.register-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.login-btn {
+  color: #76533b;
+  border: 1px solid #76533b;
+}
+
+.register-btn {
+  background: #76533b;
+  color: white;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+  padding: 75px 8%;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #9a744f;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.15;
+  color: #46372e;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #a8794f;
+}
+
+.hero-description {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #75685e;
+  max-width: 520px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 14px 22px;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.primary-btn {
+  background: #76533b;
+  color: white;
+}
+
+.secondary-btn {
+  border: 1px solid #76533b;
+  color: #76533b;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 35px;
+  margin-top: 45px;
+  flex-wrap: wrap;
+}
+
+.hero-stats h3 {
+  color: #76533b;
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+
+.hero-stats p {
+  color: #82756b;
+  font-size: 13px;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* Features */
+
+.features {
+  padding: 70px 8%;
+  background: #f4eadc;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading > p {
+  color: #a8794f;
+  font-weight: bold;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.section-heading h2 {
+  font-size: 34px;
+  margin-bottom: 14px;
+  color: #46372e;
+}
+
+.section-heading span {
+  color: #75685e;
+}
+
+.feature-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.feature-card {
+  background: #fffaf3;
+  padding: 28px 22px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+.feature-icon {
+  color: #9a704d;
+  margin-bottom: 18px;
+}
+
+.feature-card h3 {
+  margin-bottom: 12px;
+  color: #493a30;
+}
+
+.feature-card p {
+  color: #786c62;
+  line-height: 1.7;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.feature-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #986b45;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* About */
+
+.about-section {
+  padding: 65px 10%;
+  text-align: center;
+}
+
+.about-section h2 {
+  margin-bottom: 18px;
+  color: #76533b;
+  font-size: 30px;
+}
+
+.about-section p {
+  max-width: 750px;
+  margin: auto;
+  color: #75685e;
+  line-height: 1.9;
+}
+
+/* Footer */
+
+.footer {
+  background: #46372e;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  line-height: 2;
+}
+
+/* Responsive design */
+
+@media (max-width: 1000px) {
+  .feature-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 45px 6%;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .feature-container {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2 {
+    font-size: 26px;
+  }
+}
